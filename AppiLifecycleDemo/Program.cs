@@ -14,7 +14,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddHttpClient<SaySomethingConsumer>(x => x.BaseAddress = new Uri("http://localhost:5159/"));
+builder.Services.AddHttpClient<SaySomethingConsumer>(x => x.BaseAddress = new Uri("https://localhost:7105/"));
 
 builder.Services.AddMassTransit(x =>
 {
